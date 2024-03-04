@@ -16,10 +16,12 @@ const ImageUpload = () => {
       const response = await axios.post('https://oscarmmission2.cognitiveservices.azure.com/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
-          //TO DO- Add any additional headers required by Azure
+          'Ocp-Apim-Subscription-Key': '30b29e86888b489fb08687635d39390e'
+          // Add any additional headers required by Azure
         },
       });
       console.log(response.data); // Handles the response from Azure
+      // Parse the response and display the results
     } catch (error) {
       console.error('Error uploading image:', error);
     }
