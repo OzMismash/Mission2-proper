@@ -11,7 +11,7 @@ const ImageUpload = () => {
   const handleSubmit = async () => {
     const formData = new FormData();
     formData.append('image', image);
-
+  
     try {
       const response = await axios.post('https://oscarmmission2.cognitiveservices.azure.com/', formData, {
         headers: {
