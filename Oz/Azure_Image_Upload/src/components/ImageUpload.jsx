@@ -13,10 +13,10 @@ const ImageUpload = () => {
     formData.append('image', image);
   
     try {
-      const response = await axios.post('https://oscarmmission2.cognitiveservices.azure.com/', formData, {
+      const response = await axios.post('YOUR_API_ENDPOINT', formData, { 
         headers: {
           'Content-Type': 'multipart/form-data',
-          'Ocp-Apim-Subscription-Key': 'DONT COMMIT WITH YOUR API KEY IN HERE YOU IDIOT'
+          'Ocp-Apim-Subscription-Key': 'YOUR_API_KEY'
           // Add any additional headers required by Azure
         },
       });
