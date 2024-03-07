@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "@azure/cognitiveservices-computervision": "^8.2.0",
     "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
     "nodemon": "^3.1.0"
   }
 }
