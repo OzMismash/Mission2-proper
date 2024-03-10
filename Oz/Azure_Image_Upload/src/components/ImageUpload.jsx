@@ -62,8 +62,8 @@ const ImageUpload = () => {
     
 
     try {
-      const subscriptionKey = '6eeac3dd4a614ecab5462f3bed6daf41';
-      const endpoint = 'https://m2vehicledetection-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/f2f2c894-9eaf-47d6-b8ef-27148e9da62a/classify/iterations/M2VidIteration3/image';
+      const subscriptionKey = 'YOUR_KEY_HERE';
+      const endpoint = 'https://m2vehicledetection.cognitiveservices.azure.com/';
 
       // Provide options with either inHeader or inQuery property
       const credentials = new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': subscriptionKey } });
