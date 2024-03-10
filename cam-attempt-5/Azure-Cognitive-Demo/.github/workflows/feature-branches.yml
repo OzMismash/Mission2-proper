@@ -3,10 +3,7 @@ name: Build and Test
 on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - feature/*
 
 jobs:
   build_test:
